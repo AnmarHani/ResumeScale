@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ريزومي سكيل يقوم تلقائياً بإنشاء وتصميم ومشاركة السير الذاتية باستخدام الذكاء الاصطناعي لجعل العملية سريعة وسهلة."
+    />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <title>ريزومي سكيل | أفضل منصة لإنشاء السير الذاتية</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Join Waitlist Modal -->
+  <div
+    class="modal fade"
+    id="joinWaitlistModal"
+    tabindex="-1"
+    aria-labelledby="joinWaitlistModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="joinWaitlistModalLabel">
+            انضم إلى قائمة الانتظار
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeJTvLxt432laE0BdjuPVrWb8f5pIe1LlKbcTuMUks64nohXQ/viewform?embedded=true"
+            width="100%"
+            height="600px"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading...</iframe
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Email Modal -->
+  <div
+    class="modal fade"
+    id="mailModal"
+    tabindex="-1"
+    aria-labelledby="mailModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mailModalLabel">
+            البريد الإلكتروني للاتصال
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>contact@resume-scale.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-black">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/logo.png" alt="Logo" width="150px" height="55px"
+        /></a>
+        <button
+          class="navbar-toggler bg-light text-black"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">اعمالنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">الفريق</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">اتصل بنا</a>
+            </li>
+          </ul>
+          <a href="index.html" class="btn btn-primary">English</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-dark text-white">
+      <div class="container text-center">
+        <h1 class="fs-1 display-1 fw-bold hero-title">
+          أنشئ، صمم، وشارك <mark>سيرة ذاتية</mark>
+        </h1>
+
+        <p class="lead py-5">
+          ريزومي سكيل يستخدم الذكاء الاصطناعي وغيرها من الخدمات لبناء وتصميم
+          ومشاركة السير الذاتية تلقائيًا، مما يجعل العملية سريعة وسهلة وفعالة.
+        </p>
+
+        <div class="d-flex justify-content-center gap-5">
+          <a
+            href="#"
+            class="btn btn-lg btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#joinWaitlistModal"
+            >انضم لقائمة الانتظار</a
+          >
+          <a href="#services" class="btn btn-lg btn-secondary">تعلم أكثر</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="green py-5">
+      <div class="container">
+        <h2 class="text-center pb-5">خدماتنا</h2>
+        <div class="row gap-lg-0 gap-sm-3">
+          <div class="col-lg-4 col-md-12">
+            <div class="card p-5 black text-white rounded-5">
+              <div class="card-body">
+                <h5 class="card-title">إنشاء السيرة الذاتية</h5>
+                <p class="card-text">
+                  تقوم تقنية الذكاء الاصطناعي لدينا بإنشاء سير ذاتية مخصصة
+                  تلقائيًا بعد تحليل مهاراتك وخبراتك وتفضيلاتك.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card p-5 black text-white rounded-5">
+              <div class="card-body">
+                <h3 class="card-title">تحليل السيرة الذاتية</h3>
+                <p class="card-text">
+                  قم بتحميل سيرتك الذاتية والحصول على تعليقات مفصلة لتحسين
+                  المحتوى والتنسيق والكلمات الرئيسية لكل وظيفة.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card p-5 black text-white rounded-5">
+              <div class="card-body">
+                <h3 class="card-title">قوالب المجتمع</h3>
+                <p class="card-text">
+                  احصل على إمكانية الوصول إلى مكتبة قوالب السيرة الذاتية التي
+                  يتم جمعها من المجتمع لإيجاد تصاميم تناسب احتياجاتك.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="black py-5 text-white">
+      <div class="container">
+        <h2 class="text-center pb-5">اعمالنا</h2>
+        <div class="row gap-md-3 gap-5 justify-content-center">
+          <a
+            class="btn btn-secondary col-lg-4 col-md-6 col-sm-12 p-5 text-center text-decoration-none text-white border-5"
+            href="#"
+          >
+            <h3 class="portfolio-title">نموذج العمل</h3>
+            <p class="portfolio-text">
+              تعرف على نموذج أعمالنا واستراتيجيتنا للنمو.
+            </p>
+          </a>
+          <a
+            class="btn btn-secondary col-lg-4 col-md-6 col-sm-12 p-5 text-center text-decoration-none text-white border-5"
+            href="#"
+          >
+            <h3 class="portfolio-title">خطة التسويق</h3>
+            <p class="portfolio-text">
+              انظر كيف ننوي التسويق وبدء جذب العملاء.
+            </p>
+          </a>
+          <a
+            class="btn btn-secondary col-lg-4 col-md-6 col-sm-12 p-5 text-center text-decoration-none text-white border-5"
+            href="#"
+          >
+            <h3 class="portfolio-title">عرض التقديم</h3>
+            <p class="portfolio-text">
+              تحقق من عرض التقديم الخاص بنا لترى كيف أن فكرتنا رائعة.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="green py-5">
+      <div class="container">
+        <h2 class="text-center pb-5">فريقنا</h2>
+        <div class="row gap-md-0 gap-sm-3">
+          <a
+            class="col-md-6 col-sm-12 text-center text-decoration-none"
+            href="https://www.linkedin.com/in/anmar-hani-448b05224/"
+            target="_blank"
+          >
+            <div class="card p-5 black text-white rounded-5">
+              <div class="card-body">
+                <h5 class="card-title">أنمار هاني</h5>
+                <p class="card-text">مهندس برمجيات</p>
+              </div>
+            </div>
+          </a>
+          <a
+            class="col-md-6 col-sm-12 text-center text-decoration-none"
+            href="https://www.linkedin.com/in/osama-alshakri-a7a79524a/"
+            target="_blank"
+          >
+            <div class="card p-5 black text-white rounded-5">
+              <div class="card-body">
+                <h5 class="card-title">أسامة الشاكري</h5>
+                <p class="card-text">مهندس صناعي</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="black py-5">
+      <div class="container">
+        <h2 class="text-center pb-5">اتصل بنا</h2>
+        <form action="mailto:contact@resume-scale.com">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label text-white"
+                >البريد الإلكتروني</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label text-white">الاسم</label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label text-white">الموضوع</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label text-white">الرسالة</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">أرسل</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 black text-white text-center">
+      <div class="container">
+        <p class="mb-0">حقوق النشر والنسخ؛ 2023 - ريزومي سكيل</p>
+      </div>
+      <div class="container pt-4">
+        <a href="https://www.linkedin.com/company/resume-scale">
+          <i class="bi bi-linkedin text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/resume-scale">
+          <i class="bi bi-twitter text-white"></i>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#mailModal">
+          <i class="bi bi-envelope-fill text-white"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
