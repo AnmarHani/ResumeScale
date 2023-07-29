@@ -1,0 +1,101 @@
+body {
+    background: #fff;
+    color: #000;
+  }
+  
+  .navbar {
+    background: #000;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+.green {
+    background: rgb(51,215,162);
+    background: linear-gradient(90deg, rgba(51,215,162,1) 0%, rgba(34,207,242,1) 100%);
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.card:hover, .card:hover > * {
+    background: whitesmoke;
+    color: black !important;
+}
+
+  .btn-secondary {
+    border: 2px solid whitesmoke;
+    background: transparent;
+    transition: all 0.5s;
+}
+.btn-secondary:hover {
+    border: 2px solid rgb(51,215,162) !important
+    ;
+    background: rgb(51,215,162);
+    background: linear-gradient(90deg, rgba(51,215,162,1) 0%, rgba(34,207,242,1) 100%);
+  }
+.btn-primary {
+    border: 2px solid rgb(51,215,162);
+    background: rgb(51,215,162);
+    background: linear-gradient(90deg, rgba(51,215,162,1) 0%, rgba(34,207,242,1) 100%);
+    color: black;
+    transition: all 0.5s;
+}
+.btn-primary:hover {
+    border: 2px solid whitesmoke;
+    background: whitesmoke;
+    color: black;
+}
+.black {
+    background-color: black;
+}
+
+.nav-link:hover {
+    color: rgb(51,215,162) !important;
+}
+
+section {
+    padding-top: 10em !important;
+    padding-bottom: 10em !important;
+}
+
+.hero {
+    background-color: black !important;
+    padding-top: 20vh !important;
+    padding-bottom: 40vh !important;
+
+}
+
+mark {
+    border-radius: 10px;
+    background: rgb(51,215,162);
+background: linear-gradient(90deg, rgba(51,215,162,1) 0%, rgba(34,207,242,1) 100%);
+}
+
+.hero-title {
+    font-size: 5em !important;
+    margin: 0.5em;
+}
+
+  #section1, #section2, #section3, #section4 {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #contact {
+    padding: 50px 0;
+    background: #000;
+    color: #fff;
+  }
+
+
+.modal-content{
+    width: 670px !important;
+}
